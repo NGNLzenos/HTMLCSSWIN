@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#FBFBFB;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+     max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+	margin:0;
+	padding: 0;
+}
+
+h3{
+	font-size: 28px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 20px; 
+  line-height: 150%;
+}
+
+.menu ul {
+  display: flex;
+  gap: 24px; 
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+}
+.main {
+	display: flex;
+	width: 100vw;
+}
+.left,.right {
+  flex: 1;            
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 圖片填滿但不變形裁切 */
+}
+
+.right {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section2.png?raw=true');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  padding-left: 80px;
+}
+.right h2{
+	font-size: 120px;
+	font-weight: 900;
+	color: #0027d5;
+}
+.right h3{
+	color: #0027d5;
+}
+.main2{
+	width: 100vw;
+	display: flex;
+}
+.left2 img{
+	width: 100%;
+	object-fit: cover;
+}
+.left2 {
+	width: 50%;
+}
+.right2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: flex-start;
+	gap: 8px;
+	margin-left: 24px;
+}
+.right2 h4{
+	font-size: 24px;
+	font-weight: 500;
+	color: #0027d5;
+}
+.class{
+	display: flex;
+}
+.multiline-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;  /* ✅ 限制行數 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 6em;        /* 建議加保險值（3行 * 行高） */
+  line-height: 2em;
+}
+
+
+
+
+.btn-blue {
+  display: inline-block;
+  background-color: #0027d5;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 12px;
+}
+.btn-blue:hover {
+  background-color:bisque;
+  color:#0027d5;
+}
+
+.btn{
+  color:#6C757D;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  border: 1px solid#000000;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 12px;
+  max-width: 96px;
+  max-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  
+}
+.btn:hover{
+	background-color: #6C757D;
+	color: #0027d5;
+}
+
+.main3{
+	max-width: 1296px;
+	margin: 0 auto;
+
+}
+.search{
+display: flex;   
+  justify-content:flex-start; 
+  padding: 40px 0; 
+}
+.search-bar {
+  width: 416px;       
+  height: auto; 
+  padding: 16px 48px 16px 16px;
+  font-size: 16px;
+  border: 1px solid black;    
+  border-radius: 40px;        
+  outline: none;    
+  transition: 0.3s all ease;
+}
+.cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content:flex-start;
+}
+
+.card {
+  width: calc((100% - 48px) / 3); /* 三張卡片平均分配，兩個 gap = 48px */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.card a{
+	color: #0027d5;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 150%;
+}
+.card a.btn{
+	color: #6C757D;
+}
+
+.page-bar{
+	width: 328px;
+	height: 56px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 40px;
+	
+}
+
+.page-bar ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.page-bar li a {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.page-bar li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+.email{
+	font-size: 32px;
+	font-weight: 500;
+	width: 1036px;
+	height: 48px;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1296px;
+	margin: 0 auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.icons{
+	display: flex;
+	justify-content: space-around;
+}
+.icons ul{
+	display: flex;
+	justify-content: center;
+}
+
+.write{
+	display: flex;
+	justify-content: center;
+	background-color:#FFFFFF;
+	text-align: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* ------ Mobile: max-width 768px ------ */
+@media (max-width: 768px) {
+  .menu {
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+
+  .menu ul {
+    flex-direction: column;  /* 👉 垂直排列 */
+    gap: 12px;
+  }
+
+  .menu li {
+    font-size: 18px;
+  }
+
+  /* 1. 改為直向排列 */
+  .main,
+  .main2 {
+    flex-direction: column;
+  }
+
+  /* 2. 圖片與內容各占100%寬度 */
+  .left,
+  .right,
+  .left2,
+  .right2 {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* 3. 右側 padding 調整 */
+  .right {
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* 4. 卡片一列一張 */
+  .card {
+    width: 100%;
+  }
+
+  /* 5. 搜尋列 100% */
+  .search-bar {
+    width: 100%;
+  }
+
+  /* 6. 按鈕置中 */
+  .btn,
+  .btn-blue {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 7. Footer 元件改為直向 */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .email {
+    width: auto;
+  }
+}
+
+/* ------ Tablet: max-width 1024px ------ */
+@media (max-width: 992px) {
+ .main3 {
+    padding: 0 16px; /* 保留邊界 */
+    max-width: 100%;  /* 不再限制最大寬度 */
+  }
+
+  .card {
+    width: 100%; /* 每張卡片單獨占滿整排 */
+  }
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px; /* 可調整數值 */
+  .cards ul {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
