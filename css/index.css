@@ -54,7 +54,6 @@ table {
 body{
      max-width: 100%;
   width: 100%;
-  overflow-x: hidden;
 	margin:0;
 	padding: 0;
 }
@@ -326,7 +325,7 @@ display: flex;
   }
 
   .menu ul {
-    flex-direction: column;  /* 👉 垂直排列 */
+    flex-direction: column; 
     gap: 12px;
   }
 
@@ -334,13 +333,11 @@ display: flex;
     font-size: 18px;
   }
 
-  /* 1. 改為直向排列 */
   .main,
   .main2 {
     flex-direction: column;
   }
 
-  /* 2. 圖片與內容各占100%寬度 */
   .left,
   .right,
   .left2,
@@ -349,31 +346,25 @@ display: flex;
     padding: 0 16px;
   }
 
-  /* 3. 右側 padding 調整 */
   .right {
     align-items: center;
-    padding-left: 0;
     text-align: center;
   }
 
-  /* 4. 卡片一列一張 */
   .card {
     width: 100%;
   }
 
-  /* 5. 搜尋列 100% */
   .search-bar {
     width: 100%;
   }
 
-  /* 6. 按鈕置中 */
   .btn,
   .btn-blue {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* 7. Footer 元件改為直向 */
   .footer {
     flex-direction: column;
     align-items: center;
@@ -385,21 +376,20 @@ display: flex;
   }
 }
 
-/* ------ Tablet: max-width 1024px ------ */
 @media (max-width: 992px) {
  .main3 {
-    padding: 0 16px; /* 保留邊界 */
-    max-width: 100%;  /* 不再限制最大寬度 */
+    padding: 0 16px; 
+    max-width: 100%;  
   }
 
   .card {
-    width: 100%; /* 每張卡片單獨占滿整排 */
+    width: 100%; 
   }
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  max-height: 500px; /* 可調整數值 */
+  max-height: 500px; 
   .cards ul {
     flex-direction: column;
     gap: 32px;
